@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visakan S | Portfolio</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #ffffff;
+
+            background: 
+              linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("asset/background.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .nav-left, .nav-center, .nav-right {
+            flex: 1;
+        }
+
+        .nav-left img {
+            width: 70px;
+        }
+
+        .nav-center ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+        }
+
+        .nav-center a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .nav-center a:hover {
+            color: #00b7ff;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-right img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #00b7ff;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            animation: fadeDown 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #dcdcdc;
+        }
+
+        /* SECTION CARDS */
+        .section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.92);
+            color: #222;
+            border-radius: 10px;
+            animation: fadeUp 1s ease;
+        }
+
+        .section h2 {
+            color: #0056d2;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #ccc;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="asset/laptop 1.jpeg">
+    </div>
+
+    <div class="nav-center">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+        <span>Visakan S</span>
+        <img src="asset/profile.jpeg">
+    </div>
+</nav>
+
+<div class="hero">
+<h1>VISAKAN S</h1>
+    <h1>Computer Science Student</h1>
+    <p>•Frontend Development • Problem Solving • AIML</p>
+</div>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student with a strong interest in frontend
+        development and problem solving. I focus on building clean,
+        functional applications using Java and Spring Boot.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <p>•Java</p>
+<p>•C++</p>
+<p>•Python</p>
+<p>•MySQL</p>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <p><strong>Digital Warranty Tracker</strong> – Spring Boot, MySQL</p>
+    <p><strong>NutriPal - Your Personalized AI Nutritionist</strong> </p>
+</section>
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <p>
+        📧 Email:
+        <a href="mailto:svisakanoct02@gmail.com">
+            svisakanoct02@gmail.com
+        </a>
+    </p>
+
+    <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/visakan-sathiyamoorthi"
+           target="_blank">
+            linkedin.com/in/visakan-sathiyamoorthi
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Visakan S
+</footer>
+
+</body>
+</html>
